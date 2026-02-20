@@ -114,3 +114,43 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
     line-height: 1.6;
     font-size: 1rem;
 }
+/* --- TỐI ƯU HÓA CHO ĐIỆN THOẠI (RESPONSIVE) --- */
+@media (max-width: 768px) {
+    .container {
+        height: auto; /* Giải phóng chiều cao cố định để nội dung không bị cắt */
+        min-height: 90vh;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    header {
+        flex-direction: column; /* Xếp logo và thanh menu dọc xuống thay vì ngang */
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Cho phép các mục menu rớt dòng nếu quá chật */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Thu nhỏ tiêu đề Glitch cho vừa màn hình */
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .about-section {
+        margin-top: 40px;
+    }
+
+    .glass-card {
+        width: 100%; /* Thẻ giới thiệu sẽ tự co giãn vừa vặn với mép điện thoại */
+        max-width: 320px;
+    }
+}
