@@ -53,6 +53,46 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 .project-link { display: inline-block; margin-top: 15px; color: #66fcf1; text-decoration: none; font-size: 0.95rem; transition: 0.3s; font-weight: bold;}
 .project-link:hover { text-shadow: 0 0 8px rgba(102, 252, 241, 0.8); }
 
+/* --- ĐỐI TÁC ĐỒNG HÀNH --- */
+.partners-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%; /* Bo tròn hoàn toàn */
+    color: #8a8d91;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+
+.partner-logo i {
+    font-size: 1.5rem;
+    color: #66fcf1;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: translateY(-5px);
+    border-color: #66fcf1;
+    box-shadow: 0 5px 15px rgba(102, 252, 241, 0.2);
+}
+
+.partner-logo:hover i {
+    color: #ffffff;
+    text-shadow: 0 0 10px #66fcf1;
+}
+
 /* --- TỐI ƯU HÓA CHO ĐIỆN THOẠI (RESPONSIVE) --- */
 @media (max-width: 768px) {
     .container { height: auto; min-height: 90vh; padding: 20px; margin: 20px 0; }
