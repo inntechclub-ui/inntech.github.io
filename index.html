@@ -9,67 +9,84 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container scrollable-container">
         <header>
             <div class="logo">INNTECH<span>.</span></div>
             <nav>
                 <ul>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Hoạt động</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#values">Giá trị</a></li>
+                    <li><a href="#departments">Tổ chức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section class="about-section">
-            <h2 class="section-title">Về INNTECH</h2>
-            <div class="cards-container">
-                <div class="glass-card">
-                    <h3>Tầm Nhìn</h3>
-                    <p>Tiên phong trong các giải pháp công nghệ và đổi mới sáng tạo.</p>
+            <section class="hero-section">
+                <h1 class="glitch" data-text="INNOVATE THE FUTURE">INNOVATE THE FUTURE</h1>
+                <p class="subtitle">Khám phá sức mạnh của công nghệ và sự sáng tạo không giới hạn.</p>
+                <div class="join-container">
+                    <div class="btn-primary join-btn desktop-btn">
+                        <span class="text">Tham gia ngay</span>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/inntechclub?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-primary join-btn mobile-btn">Tham gia ngay</a>
                 </div>
-                <div class="glass-card">
-                    <h3>Sứ Mệnh</h3>
-                    <p>Kết nối đam mê lập trình, kiến tạo những sản phẩm thực tế.</p>
-                </div>
-                <div class="glass-card">
-                    <h3>Giá Trị</h3>
-                    <p>Học hỏi không ngừng - Sáng tạo vô tận - Hợp tác hiệu quả.</p>
-                </div>
-            </div>
-        </section>
-        </section>
+            </section>
 
-        <section class="projects-section">
-            <h2 class="section-title">Dự án Khởi nghiệp</h2>
-            <div class="cards-container">
-                <div class="glass-card project-card">
-                    <h3>EduTech AI</h3>
-                    <p>Hệ thống hỗ trợ học tập thông minh dựa trên AI, giúp sinh viên tối ưu hóa lộ trình nghiên cứu.</p>
-                    <a href="#" class="project-link">Xem chi tiết <span>&rarr;</span></a>
+            <section id="about" class="about-section">
+                <h2 class="section-title">Về INNTECH CLUB</h2>
+                <div class="glass-card full-width-card">
+                    <p class="club-desc">Được thành lập vào ngày <strong>15/10/2025</strong> dưới sự quản lý trực tiếp bởi Trung tâm Sáng tạo và Ươm tạo khởi nghiệp Trường ĐH Nguyễn Tất Thành và Viện Đào tạo Quốc tế NIIE.</p>
+                    <p class="club-desc"><strong>Tầm nhìn:</strong> Trở thành cộng đồng khởi nghiệp ứng dụng công nghệ, đổi mới sáng tạo và chuyển đổi số hàng đầu. Là cầu nối vững chắc giữa sinh viên, doanh nghiệp và hệ sinh thái khởi nghiệp.</p>
+                    <p class="club-desc"><strong>Sứ mệnh:</strong> Tạo môi trường học tập, thực hành và kết nối. Trang bị kiến thức, kỹ năng để sinh viên hiện thực hóa ý tưởng, thúc đẩy văn hóa số và xây dựng thế hệ doanh nhân trẻ hội nhập quốc tế.</p>
                 </div>
-                <div class="glass-card project-card">
-                    <h3>Smart Campus</h3>
-                    <p>Giải pháp IoT kết nối các thiết bị trong khuôn viên trường học để quản lý năng lượng và không gian.</p>
-                    <a href="#" class="project-link">Xem chi tiết <span>&rarr;</span></a>
+            </section>
+
+            <section id="values" class="values-section">
+                <h2 class="section-title">Giá Trị Cốt Lõi</h2>
+                <div class="grid-container">
+                    <div class="glass-card"><span class="inntech-letter">I</span> nnovation<p>Luôn đổi mới, tìm kiếm giải pháp sáng tạo.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">N</span> etworking<p>Kết nối sinh viên, doanh nghiệp, chuyên gia.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">N</span> urturing<p>Nuôi dưỡng tài năng và tinh thần khởi nghiệp.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">T</span> echnology<p>Ứng dụng công nghệ tạo giá trị thực tiễn.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">E</span> ntrepreneurship<p>Thúc đẩy kinh doanh sáng tạo.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">C</span> ollaboration<p>Hợp tác đa ngành, đồng sáng tạo.</p></div>
+                    <div class="glass-card"><span class="inntech-letter">H</span> umanity<p>Gắn công nghệ với trách nhiệm xã hội.</p></div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        ```
+            <section id="departments" class="departments-section">
+                <h2 class="section-title">6 Tổ Chức Năng</h2>
+                <div class="grid-container">
+                    <div class="glass-card"><i class="fas fa-brain dept-icon"></i><h3>The Brain</h3><p>Tổ Dự Án & Công Nghệ</p></div>
+                    <div class="glass-card"><i class="fas fa-user-tie dept-icon"></i><h3>The Face</h3><p>Tổ Đối Ngoại</p></div>
+                    <div class="glass-card"><i class="fas fa-bullhorn dept-icon"></i><h3>The Voice</h3><p>Tổ Truyền Thông</p></div>
+                    <div class="glass-card"><i class="fas fa-dumbbell dept-icon"></i><h3>The Muscle</h3><p>Tổ Nhân Lực</p></div>
+                    <div class="glass-card"><i class="fas fa-heart dept-icon"></i><h3>The Heart</h3><p>Tổ Đối Nội</p></div>
+                    <div class="glass-card"><i class="fas fa-eye dept-icon"></i><h3>The Eyes</h3><p>Tổ Sáng Tạo & Đổi Mới</p></div>
+                </div>
+            </section>
 
-            <h1 class="glitch" data-text="INNOVATE THE FUTURE">INNOVATE THE FUTURE</h1>
-            <p class="subtitle">Khám phá sức mạnh của công nghệ và sự sáng tạo không giới hạn.</p>
-<div class="join-container">
-    <div class="btn-primary join-btn desktop-btn">
-        <span class="text">Tham gia ngay</span>
-        <div class="icons">
-            <a href="https://www.facebook.com/inntechclub?locale=vi_VN" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
-    </div>
-    <a href="contact.html" class="btn-primary join-btn mobile-btn">Tham gia ngay</a>
-</div>
+            <section class="projects-section">
+                <h2 class="section-title">Dự án Khởi nghiệp</h2>
+                <div class="cards-container">
+                    <div class="glass-card project-card">
+                        <h3>EduTech AI</h3>
+                        <p>Hệ thống hỗ trợ học tập thông minh dựa trên AI.</p>
+                        <a href="#" class="project-link">Xem chi tiết <span>&rarr;</span></a>
+                    </div>
+                    <div class="glass-card project-card">
+                        <h3>Smart Campus</h3>
+                        <p>Giải pháp IoT quản lý năng lượng khuôn viên trường.</p>
+                        <a href="#" class="project-link">Xem chi tiết <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <script src="main.js"></script>

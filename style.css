@@ -1,13 +1,24 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 body { background-color: #0b0c10; color: #c5c6c7; min-height: 100vh; display: flex; justify-content: center; align-items: center; }
-.container { width: 90%; max-width: 1200px; height: 90vh; background: linear-gradient(145deg, #111217, #0b0c10); border: 1px solid #1f2833; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); padding: 40px; display: flex; flex-direction: column; }
-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; }
+.container { 
+    width: 90%; max-width: 1200px; 
+    height: auto; min-height: 90vh; /* Giải phóng chiều cao cố định */
+    background: linear-gradient(145deg, #111217, #0b0c10); 
+    border: 1px solid #1f2833; border-radius: 16px; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8); 
+    padding: 40px; margin: 40px 0; /* Cách lề trên dưới */
+    display: flex; flex-direction: column; 
+}
 .logo { font-size: 24px; font-weight: 700; color: #ffffff; letter-spacing: 2px; }
 .logo span { color: #66fcf1; }
 nav ul { list-style: none; display: flex; gap: 30px; }
 nav a { text-decoration: none; color: #c5c6c7; font-weight: 400; transition: color 0.3s ease; }
 nav a:hover { color: #66fcf1; }
-main { text-align: center; margin-top: auto; margin-bottom: auto; }
+.hero-section {
+    text-align: center;
+    min-height: 60vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
 h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; }
 .subtitle { font-size: 1.2rem; font-weight: 300; margin-bottom: 40px; color: #8a8d91; }
 .btn-primary { display: inline-block; padding: 15px 40px; border: 1px solid #66fcf1; color: #66fcf1; text-decoration: none; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; border-radius: 4px; transition: all 0.3s ease; background: transparent; }
@@ -136,6 +147,13 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 .project-link { display: inline-block; margin-top: 15px; color: #66fcf1; text-decoration: none; font-size: 0.95rem; transition: 0.3s; font-weight: bold;}
 .project-link:hover { text-shadow: 0 0 8px rgba(102, 252, 241, 0.8); }
 /* --- TỐI ƯU HÓA CHO ĐIỆN THOẠI (RESPONSIVE) --- */
+/* --- THẨM MỸ CHO BỐ CỤC MỚI --- */
+.club-desc { color: #c5c6c7; line-height: 1.8; margin-bottom: 15px; text-align: justify; font-size: 1.1rem; }
+.full-width-card { width: 100%; max-width: 100%; padding: 40px; }
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; width: 100%; }
+.inntech-letter { color: #66fcf1; font-size: 2rem; font-weight: bold; margin-right: 5px; text-shadow: 0 0 10px rgba(102, 252, 241, 0.5); }
+.dept-icon { font-size: 2.5rem; color: #66fcf1; margin-bottom: 15px; }
+.values-section, .departments-section { margin-top: 80px; text-align: center; }
 @media (max-width: 768px) {
     .container {
         height: auto; /* Giải phóng chiều cao cố định để nội dung không bị cắt */
