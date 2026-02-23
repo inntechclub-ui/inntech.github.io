@@ -56,6 +56,24 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 .project-link { display: inline-block; margin-top: 15px; color: #66fcf1; text-decoration: none; font-size: 0.95rem; transition: 0.3s; font-weight: bold;}
 .project-link:hover { text-shadow: 0 0 8px rgba(102, 252, 241, 0.8); }
 
+/* --- TRANG GIỚI THIỆU (ABOUT PAGE) --- */
+.page-header { margin-bottom: 40px; flex-shrink: 0; }
+.about-main { margin-top: 0; text-align: left; }
+.page-title { font-size: 2.5rem; margin-bottom: 30px; text-align: center; color: #ffffff; }
+.full-card { width: 100%; max-width: 100%; padding: 40px; margin-bottom: 40px; cursor: default; }
+.full-card p { margin-bottom: 15px; font-size: 1.1rem; line-height: 1.6; }
+.full-card p span { color: #66fcf1; font-weight: bold; }
+
+.grid-departments { margin-bottom: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.dept-card { width: 100%; text-align: center; padding: 25px 20px; }
+.dept-card i { font-size: 2.5rem; color: #66fcf1; margin-bottom: 15px; }
+.dept-card h3 { font-size: 1.5rem; margin-bottom: 10px; }
+
+.values-list { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+.values-list li { font-size: 1.05rem; color: #c5c6c7; }
+.values-list li strong { color: #66fcf1; font-size: 1.5rem; display: inline-block; width: 30px; }
+.values-list li span { font-weight: bold; color: #ffffff; }
+
 /* --- ĐỐI TÁC ĐỒNG HÀNH --- */
 .partners-container {
     display: flex;
@@ -112,4 +130,15 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 
     /* Trên màn hình nhỏ cho phép các logo quấn xuống hàng để tránh overflow */
     .partners-container { flex-wrap: wrap; gap: 18px; }
+
+    /* Thu gọn trang About trên điện thoại */
+    .page-title { font-size: 1.8rem; margin-bottom: 20px; }
+    .full-card { padding: 20px; margin-bottom: 25px; }
+    .full-card p { font-size: 0.95rem; margin-bottom: 10px; }
+    .grid-departments { grid-template-columns: 1fr; gap: 15px; } /* Xếp dọc 1 cột trên điện thoại */
+    .dept-card { padding: 15px; }
+    .dept-card i { font-size: 2rem; margin-bottom: 10px; }
+    .dept-card h3 { font-size: 1.2rem; }
+    .values-list li { font-size: 0.9rem; }
+    .values-list li strong { font-size: 1.2rem; width: 25px; }
 }
