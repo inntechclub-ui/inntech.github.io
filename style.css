@@ -41,8 +41,11 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 .desktop-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; width: 220px; height: 55px; padding: 0; cursor: pointer; }
 .desktop-btn .text { transition: all 0.3s ease; position: absolute; pointer-events: none;}
 .desktop-btn .icons { opacity: 0; transform: translateY(20px); transition: all 0.3s ease; display: flex; gap: 25px; font-size: 1.5rem; }
-.desktop-btn .icons a { color: #66fcf1; transition: 0.3s; }
-.desktop-btn .icons a:hover { color: #ffffff; text-shadow: 0 0 10px #66fcf1; transform: scale(1.2); }
+    .desktop-btn .icons a { color: #66fcf1; transition: 0.3s; }
+    /* Khi biểu tượng hiện ra (khi hover vào nút), giữ màu giống text của nút "Khám phá các dự án" */
+    .desktop-btn:hover .icons a { color: #66fcf1; }
+    /* Khi hover trực tiếp trên icon chỉ phóng to nhẹ, không đổi sang màu trắng */
+    .desktop-btn .icons a:hover { transform: scale(1.12); text-shadow: 0 0 6px rgba(102,252,241,0.25); }
 .desktop-btn:hover .text { opacity: 0; transform: translateY(-25px); }
 .desktop-btn:hover .icons { opacity: 1; transform: translateY(0); }
 
@@ -57,8 +60,11 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
 .partners-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ép thành 1 hàng ngang */
+    overflow-x: auto; /* Cho phép cuộn ngang nếu không vừa */
+    padding: 10px 0;
 }
 
 .partner-logo {
@@ -103,4 +109,7 @@ h1 { font-size: 4rem; color: #ffffff; letter-spacing: 4px; margin-bottom: 20px; 
     .glass-card { width: 100%; max-width: 320px; }
     .desktop-btn { display: none; }
     .mobile-btn { display: inline-block; }
+
+    /* Trên màn hình nhỏ cho phép các logo quấn xuống hàng để tránh overflow */
+    .partners-container { flex-wrap: wrap; gap: 18px; }
 }
